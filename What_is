@@ -1,11 +1,11 @@
-- what is this solana thing?
-- why did it 100x+ within one calender year? 
+# what is this solana thing?
+## why did it 100x+ within one calender year? 
 - is it still a good investment regarding the current price?
-- how does it compare vs similar projects?
+## how does it compare vs similar projects?
 
 
 I guess we should start with the basis,
-How was Solana created and why? -  Anatoly Yakovenko, one of the creators of Solana, didn't look at the current PoW and PoS systems
+**How was Solana created and why?** -  Anatoly Yakovenko, one of the creators of Solana, didn't look at the current PoW and PoS systems
 that projects such as Bitcoin and Ethereum implement as the most effective way to deal with network synchronization.
 
 Mentioned projects above currently struggle to scale beyond 15 transactions per second worldwide, iN the other hand centralized payment systems
@@ -13,7 +13,7 @@ such as Visa required peaks of 65,000 tps (tx per second). This was not, in his 
 So, with this in mind, Anatoly decided to create a new project, envisioned to be a single scalable blockchain.
 Solana is built on Rust and its original name was Loom.
 
-Why all the hype and punpanomics?
+**Why all the hype and punpanomics?**
 
 Well Solana came to the game with something new, PoH , Proof of History. 
 This differs from previous aproaches due to the fact it achieves consensus and create blocks in an alternative way.
