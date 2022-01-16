@@ -6,25 +6,25 @@
 
 I guess we should start with the basis,
 **How was Solana created and why?** -  Anatoly Yakovenko, one of the creators of Solana, didn't look at the current PoW and PoS systems
-that projects such as Bitcoin and Ethereum implement as the most effective way to deal with network synchronization.
+that projects such as Bitcoin and Ethereum implement as the most effective way to deal with network synchronization and scalability.
 
-Mentioned projects above currently struggle to scale beyond 15 transactions per second worldwide, iN the other hand centralized payment systems
-such as Visa required peaks of 65,000 tps (tx per second). This was not, in his vision, ideal.
+Mentioned projects above currently struggle to scale beyond 15 transactions per second, iN the other hand centralized payment systems
+such as Visa required peaks of 65,000 tps(tx per second) worldwide. This was not, in his vision, ideal.
 So, with this in mind, Anatoly decided to create a new project, envisioned to be a single scalable blockchain.
-Solana is built on Rust and its original name was Loom.
+funfact Solana original name was Loom. kek
 
 **Why all the hype and punpanomics?**
 
 Well Solana came to the game with something new, PoH , Proof of History. 
 This differs from previous aproaches due to the fact it achieves consensus and create blocks in an alternative way.
-Whilst other "traditional blockchains" synchronize on large chunks of transactions called blocks.
-Using this method, a transaction cannot be processed until a certain time period, called "block time", has passed. 
+Other "traditional blockchains" synchronize on large chunks of transactions called blocks and, using this method,
+a transaction cannot be processed until a certain time period, called "block time", has passed. 
 
-In bitcoins and ethereum current Pow system these block times need to be very large (+-10min) to reduce the odds of multiple validators producing a new *valid block* at the same time
+In bitcoins and ethereum current Pow system these block times need to be very large (+-10min) to reduce the odds of multiple validators producing a new valid block at the same time
 (valid blocks are all those blocks that have been mined and have been included in the blockchain)
-To do this, each mined block must pass through the network consensus and proove that has managed to solve the assigned cryptographic puzzle.
+To do this, each mined block must pass through some kind of network consensus and show that has managed to solve the assigned cryptographic puzzle to insert in the chain
 
-In PoS the same isnt true, Proof-of-stake reduces the amount of computational work needed to verify blocks and transactions, the most upfront difference is
+In PoS the same isnt true, Proof-of-stake reduces the amount of computational work needed to verify blocks and transactions. The most upfront difference is
 that it uses the machines of coin holders to verify blocks, this actors stake their coins for the chance of verifying blocks, thus becoming validators.
 its technicly more fair due to the fact it randomly selects validators to verify blocks instead of using a competion based mechanism to achieve the same result.
 
@@ -32,7 +32,10 @@ Then came the russian dude, and his PoH, this is a way to organize and construct
 assembling them accordingly to the last snapshot taken. This in a way is like taking pictures of an apple going bad and establishing a timeline based on the degree
 of roting that would develop troughout over time.
 Going into detail, it uses a high frequency Verifiable Delay Function, which produces a unique output by requiring a specific number of sequential steps
-to evaluate.
+to evaluate. Leader nodes "timestamp" blocks with cryptographic proofs that some duration of time has passed since the last proof.
+All data hashed into the proof most certainly have occurred before the proof was generated.
+Looks pretty unatangible but is pretty much a cronological collage of network states.
+
 
 
 
